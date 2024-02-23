@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./assets/fonts/Montserrat-Regular.ttf') format('woff') ;
+  /* Add more font formats (e.g., woff2, ttf) for better browser compatibility */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'CustomFont';
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --dark:#0F4B92;
+  --medium:  #C7DAF1;
+  --light: #DFF3FF;
+}
+
+:root {
+  --primary-color: #0f4b92;
+}
+
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.separator {
+  background: rgb(145, 184, 255);
+  width: 2px;
+  height: 10rem;
+}
+
+.separator-div {
+  background: rgb(227, 227, 227);
+  width: 2px;
+  height: 5rem;
+}
+
+
+/* NAVBAR */
+.navbar {
+  padding: 1.5rem 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  /* justify-content: ; */
+}
+
+.logo > div {
+  color: rgb(33, 155, 255);
+}
+
+.logo > div > h1 {
+  font-size: 2rem;
+}
+
+.logo > img {
+  height: 75px;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.navbar-list > a {
+  color: black;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.navbar-links > button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background: #ffffff;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* HOME PAGE */
+.home {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home > .left-section .intro-section > h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.home > .left-section > .intro-section > p {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: gray;
+}
+
+.home > .left-section > .feature-section {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.home > .left-section > .feature-section div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.home > .left-section > .feature-section div .icon {
+  padding: 0.5rem;
+  border-radius: 100%;
+  background: rgb(255, 242, 219);
+}
+
+.home > .left-section > .get-started-btn {
+  background: var(--primary-color);
+  padding: 0.75rem 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 5px;
+  border-width: 0;
+  font-size: 1rem;
+}
+
+.home > .left-section > .small-info-section {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.home > .left-section > .small-info-section > .used-services-section > div > img {
+  height: 2.5rem;
+  border-radius: 100%;
+  margin-left: -.5rem;
+}
+
+.home > .left-section > .small-info-section > .faq-section > h1 {
+  color: var(--primary-color);
+}
+
+.home > .left-section > .small-info-section div p {
+  color: gray;
+}
+
+.home > .right-section img {
+  height: 25rem;
+}
+
+
+/* LOAN SECTION */
+
+.loan-section {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 4rem;
+
+}
+
+.loan-section > h2 {
+  font-size: 2rem;
+}
+
+.steps-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3rem auto;
+}
+
+.steps-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.steps-section div p {
+  font-size: 1.25rem;
+}
+
+/* Our Partners  */
+
+.partner{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.partner-text{
+  text-align: center;
+}
+.partner-text span{
+  font-weight: 600;
+}
+
+/* Mobile */
+
+.col-mob{
+  background-image: url('./assets/Ellipse7.png');
+}
+
+.col-50 li{
+list-style-image: url('./assets/greentick.png');
+margin-top: -2px;
+}
+
+.mobile{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.row-mob{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.col-50{
+  width: 50%;
+}
